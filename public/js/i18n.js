@@ -1,0 +1,233 @@
+/**
+ * Lightweight English / Nepali UI translation.
+ * Server data keeps its own localName / bestUseNp fields where relevant.
+ */
+const dictionary = {
+  en: {
+    'brand.sub': 'Kathmandu · Nepal',
+    'nav.fleet': 'Our Fleet', 'nav.pricing': 'Price Calculator', 'nav.routes': 'Routes',
+    'nav.gallery': 'Gallery', 'nav.faq': 'FAQ', 'nav.contact': 'Contact',
+    'cta.book': 'Book Your Ride', 'cta.fleet': 'Explore Our Fleet',
+    'mobile.home': 'Home', 'mobile.call': 'Call', 'mobile.whatsapp': 'WhatsApp',
+    'hero.eyebrow': 'Namaste & welcome to the Himalayas',
+    'hero.title1': 'Explore Nepal', 'hero.title2': 'in Comfort',
+    'hero.sub': "From Kathmandu's temple streets to the stillness of Phewa Lake — travel with local drivers who know every bend, in a fleet you can trust.",
+    'hero.trust1': 'Licensed local drivers', 'hero.trust2': 'No hidden charges', 'hero.trust3': '24/7 on-call support',
+    'hero.scroll': 'Scroll to plan your journey',
+    'quick.title': 'Plan your journey', 'quick.sub': "Tell us where you're going. Takes less than a minute.",
+    'quick.badge': 'Dhanyabad · We reply fast', 'quick.submit': 'Check Availability',
+    'form.from': 'From', 'form.to': 'To', 'form.date': 'Travel date', 'form.passengers': 'Passengers',
+    'form.vehicle': 'Vehicle type', 'form.any': 'Any vehicle', 'form.name': 'Your name *',
+    'form.phone': 'Phone / WhatsApp *', 'form.email': 'Email (optional)', 'form.message': 'Message',
+    'stats.years': 'Years on Nepali roads', 'stats.trips': 'Happy journeys completed',
+    'stats.drivers': 'Local drivers & guides', 'stats.rating': 'Guest rating',
+    'fleet.kicker': 'Our fleet', 'fleet.title': 'The right ride for every road',
+    'fleet.sub': 'Honest daily and per-kilometre rates in NPR. Every vehicle is clean, checked and ready for the mountains.',
+    'fleet.empty': 'No vehicles match those filters. Try widening your search.',
+    'filter.title': 'Filters', 'filter.type': 'Vehicle type', 'filter.allTypes': 'All vehicles', 'filter.seats': 'Minimum seats',
+    'filter.any': 'Any', 'filter.sort': 'Sort by', 'filter.recommended': 'Recommended',
+    'filter.priceLow': 'Price: low to high', 'filter.priceHigh': 'Price: high to low',
+    'filter.mostSeats': 'Most seats', 'filter.reset': 'Reset filters',
+    'card.perDay': 'per day', 'card.perKm': 'per km', 'card.bestFor': 'Best for',
+    'card.book': 'Book Now', 'card.quote': 'Get Quote', 'card.seats': 'seats',
+    'card.driver': 'Driver included', 'card.selfDrive': 'Self drive', 'card.fuel': 'Fuel included',
+    'card.nonAc': 'Non-AC', 'card.onRequest': 'On request', 'card.selfRide': 'Self ride',
+    'fleet.count': (n) => `Showing ${n} vehicle${n === 1 ? '' : 's'}`,
+    'calc.kicker': 'Price calculator', 'calc.title': 'Know your fare before you go',
+    'calc.sub': 'Pick a vehicle, tell us your days and distance, and get an instant estimate. The final quote is calculated by our server in NPR.',
+    'calc.point1': 'Multi-day discounts applied automatically', 'calc.point2': 'Driver included where marked',
+    'calc.point3': 'Tolls, parking & VAT shown separately', 'calc.days': 'Days', 'calc.km': 'Distance (km)',
+    'calc.calculating': 'Calculating your estimate…', 'calc.request': 'Request This Quote',
+    'calc.footnote': 'Estimate only. Final price confirmed after route & permit check.',
+    'calc.total': 'Estimated total', 'calc.daily': 'Daily hire', 'calc.distance': 'Distance',
+    'calc.driver': 'Driver allowance', 'calc.discount': 'Multi-day discount',
+    'calc.excluded': 'Excludes: tolls, parking, night halt, permits & VAT.',
+    'pricing.kicker': 'At a glance', 'pricing.title': 'Compare our fleet',
+    'pricing.sub': 'All rates are per vehicle, in Nepali Rupees. Fuel is excluded unless stated.',
+    'pricing.caption': 'Vehicle pricing comparison', 'pricing.extraTitle': 'A note on extra charges',
+    'pricing.extra': "Tolls, parking fees, night halt allowance for the driver, VAT and trekking or park permits are not included in the daily/km rates. We'll always tell you the full expected total before you confirm — no surprises, promise.",
+    'table.vehicle': 'Vehicle', 'table.seats': 'Seats', 'table.day': 'Per Day', 'table.km': 'Per KM',
+    'table.driver': 'Driver Included', 'table.fuel': 'Fuel Included',
+    'routes.kicker': 'Popular routes & packages', 'routes.title': 'Where our guests go',
+    'routes.sub': 'A few favourite journeys. Every itinerary can be tailored — just tell us what you have in mind.',
+    'route.distance': 'Distance', 'route.time': 'Travel time', 'route.best': 'Best vehicle',
+    'route.from': 'From', 'route.plan': 'Plan this route',
+    'how.kicker': 'How it works', 'how.title': 'Four simple steps to the road',
+    'how.step1': 'Send your plan', 'how.step1d': 'Fill in the booking form or message us on WhatsApp with your dates and route.',
+    'how.step2': 'Get a clear quote', 'how.step2d': 'We confirm the vehicle, total price and any permits within a few hours.',
+    'how.step3': 'Confirm & relax', 'how.step3d': "Pay a small advance to lock it in. We handle the rest, right down to the licence checks.",
+    'how.step4': 'Ride with us', 'how.step4d': 'Your driver arrives on time, shares local tips and gets you there safely. Dhanyabad!',
+    'why.reviews': 'from 620+ guests', 'why.kicker': 'Why choose us',
+    'why.title': 'Local knowledge, world-class care',
+    'why.sub': "We're a Nepal-born team. We know which road closes in monsoon, where the best dal bhat is, and why \"five more minutes\" in the mountains can mean an hour.",
+    'why.w1': 'Local, licensed drivers', 'why.w1d': 'English & Nepali speaking, trained for mountain roads.',
+    'why.w2': 'GPS-tracked fleet', 'why.w2d': 'Share your live trip link with family back home.',
+    'why.w3': 'Fully insured vehicles', 'why.w3d': 'Comprehensive cover and verified permits.',
+    'why.w4': '24/7 human support', 'why.w4d': 'Call or WhatsApp us any hour, any day.',
+    'why.w5': 'No hidden charges', 'why.w5d': 'The price we quote is the price you pay.',
+    'testi.kicker': 'Kind words', 'testi.title': 'Travelled, loved, recommended',
+    'testi.sub': "Real notes from guests we've had the pleasure of driving around Nepal.",
+    'testi.q1': '"Our driver Prem navigated the Pokhara highway like a pro and stopped at the perfect hidden viewpoint. The SUV was spotless. Dhanyabad!"',
+    'testi.q2': '"Booked the Hiace for our pilgrimage group to Lumbini. On time every morning, fair price, and the driver helped us with temple etiquette."',
+    'testi.q3': '"The 4x4 into Upper Mustang was exactly what we needed. No hidden charges, and they even arranged permits. Best travel partner in Nepal."',
+    'testi.l1': 'United Kingdom · Kathmandu–Pokhara', 'testi.l2': 'India · Lumbini pilgrimage',
+    'testi.l3': 'USA · Upper Mustang safari',
+    'gallery.kicker': 'The view from here', 'gallery.title': 'Nepal, up close',
+    'gallery.sub': 'Mountains, roads and the vehicles that take us there. Tap any photo to enlarge.',
+    'faq.kicker': 'Good to know', 'faq.title': 'Frequently asked questions',
+    'faq.sub': 'Still curious? Message us on WhatsApp — we love a good travel question.',
+    'faq.ask': 'Ask us anything',
+    'faq.q1': 'How do I pay, and is an advance required?',
+    'faq.a1': 'We accept bank transfer, mobile wallets (eSewa/Khalti), cards and cash. A 20% advance confirms your booking; the balance is payable at the start or end of the trip, whichever you prefer.',
+    'faq.q2': 'What is your cancellation policy?',
+    'faq.a2': 'Cancel 7+ days before travel for a full refund of the advance. 48 hours–7 days: 50% refund. Within 48 hours the advance is non-refundable, though we\'ll always try to reschedule your trip instead.',
+    'faq.q3': 'Do you arrange trekking and park permits?',
+    'faq.a3': 'Yes. We can arrange TIMS cards, restricted-area permits (such as Mustang), Chitwan park entry and vehicle permits. Permit costs are quoted separately and never added silently.',
+    'faq.q4': 'Are your vehicles insured and drivers licensed?',
+    'faq.a4': 'Absolutely. Every vehicle has valid insurance, fitness and route permits; every driver holds a professional licence and has at least five years of mountain-road experience. We share documents on request.',
+    'faq.q5': 'How much luggage can I bring?',
+    'faq.a5': 'Sedans take 2 medium bags, SUVs 4 large bags, vans 12–16 bags and coaches 35+. For motorbikes we provide saddle bags. Roof racks are available on request for jeep journeys.',
+    'contact.kicker': "Let's talk travel", 'contact.title': 'Send us a booking request',
+    'contact.sub': "Share a few details and we'll get back to you with a personal, no-obligation quote.",
+    'contact.submit': 'Send Booking Request', 'contact.note': 'No payment needed now. We\'ll confirm availability first.',
+    'contact.visit': 'Come say namaste', 'contact.address': 'Our office', 'contact.phone': 'Call us',
+    'contact.email': 'Email', 'contact.hours': 'Hours', 'contact.hoursValue': 'Every day, 6:00 AM – 10:00 PM NPT',
+    'contact.whatsapp': 'Chat on WhatsApp',
+    'footer.about': 'A family-run Nepali travel company sharing our mountains, culture and hospitality with the world — one comfortable journey at a time.',
+    'footer.explore': 'Explore', 'footer.pricing': 'Pricing', 'footer.services': 'Services',
+    'footer.contact': 'Find us', 'footer.rights': 'All rights reserved.',
+    'footer.namaste': 'Namaste. Dhanyabad. Safe travels. 🙏',
+  },
+
+  ne: {
+    'brand.sub': 'काठमाडौँ · नेपाल',
+    'nav.fleet': 'हाम्रो फ्लीट', 'nav.pricing': 'मूल्य गणना', 'nav.routes': 'मार्गहरू',
+    'nav.gallery': 'ग्यालरी', 'nav.faq': 'प्रश्नोत्तर', 'nav.contact': 'सम्पर्क',
+    'cta.book': 'गाडी बुक गर्नुहोस्', 'cta.fleet': 'हाम्रो फ्लीट हेर्नुहोस्',
+    'mobile.home': 'गृह', 'mobile.call': 'फोन', 'mobile.whatsapp': 'WhatsApp',
+    'hero.eyebrow': 'नमस्ते तथा हिमालयमा स्वागत छ',
+    'hero.title1': 'नेपाल घुमौँ', 'hero.title2': 'आरामसँग',
+    'hero.sub': 'काठमाडौँको मन्दिरदेखि फेवा तालको शान्तिसम्म — हरेक मोड जान्ने स्थानीय चालक र भरपर्दो गाडीसँग यात्रा गर्नुहोस्।',
+    'hero.trust1': 'इजाजतपत्र प्राप्त चालक', 'hero.trust2': 'कुनै लुकेको शुल्क छैन', 'hero.trust3': '२४/७ सहयोग',
+    'hero.scroll': 'यात्रा योजना बनाउन तल जानुहोस्',
+    'quick.title': 'आफ्नो यात्रा योजना बनाउनुहोस्', 'quick.sub': 'कहाँ जाँदै हुनुहुन्छ भनेर बताउनुहोस्। एक मिनेटभन्दा कम लाग्छ।',
+    'quick.badge': 'धन्यवाद · हामी चाँडो जवाफ दिन्छौँ', 'quick.submit': 'उपलब्धता जाँच गर्नुहोस्',
+    'form.from': 'बाट', 'form.to': 'सम्म', 'form.date': 'यात्रा मिति', 'form.passengers': 'यात्रुहरू',
+    'form.vehicle': 'गाडीको प्रकार', 'form.any': 'कुनै पनि गाडी', 'form.name': 'आपको नाम *',
+    'form.phone': 'फोन / WhatsApp *', 'form.email': 'इमेल (वैकल्पिक)', 'form.message': 'सन्देश',
+    'stats.years': 'नेपाली सडकमा वर्षौं', 'stats.trips': 'सफल यात्राहरू',
+    'stats.drivers': 'स्थानीय चालक तथा गाइड', 'stats.rating': 'अतिथि मूल्याङ्कन',
+    'fleet.kicker': 'हाम्रो फ्लीट', 'fleet.title': 'हरेक बाटोका लागि सही गाडी',
+    'fleet.sub': 'नेपाली रुपैयाँमा स्पष्ट दैनिक तथा प्रति-किलोमिटर दर। हरेक गाडी सफा, जाँच गरिएको र पहाडका लागि तयार छ।',
+    'fleet.empty': 'यो खोजसँग मिल्दो गाडी भेटिएन। अलि फराकिलो खोज प्रयास गर्नुहोस्।',
+    'filter.title': 'फिल्टर', 'filter.type': 'गाडीको प्रकार', 'filter.allTypes': 'सबै गाडी', 'filter.seats': 'न्यूनतम सिट',
+    'filter.any': 'कुनै पनि', 'filter.sort': 'क्रमबद्ध गर्नुहोस्', 'filter.recommended': 'सिफारिस गरिएको',
+    'filter.priceLow': 'मूल्य: कम देखि बढी', 'filter.priceHigh': 'मूल्य: बढी देखि कम',
+    'filter.mostSeats': 'सबैभन्दा बढी सिट', 'filter.reset': 'फिल्टर हटाउनुहोस्',
+    'card.perDay': 'प्रति दिन', 'card.perKm': 'प्रति किमि', 'card.bestFor': 'उत्तमका लागि',
+    'card.book': 'अहिले बुक गर्नुहोस्', 'card.quote': 'मूल्य सोध्नुहोस्', 'card.seats': 'सिट',
+    'card.driver': 'चालक समावेश', 'card.selfDrive': 'आफैँ चलाउनुहोस्', 'card.fuel': 'इन्धन समावेश',
+    'card.nonAc': 'एसी छैन', 'card.onRequest': 'अनुरोधमा', 'card.selfRide': 'आफैँ हाँक्ने',
+    'fleet.count': (n) => `${n} वटा गाडी देखाइँदै छ`,
+    'calc.kicker': 'मूल्य गणना', 'calc.title': 'जानुअघि नै भाडा थाहा पाउनुहोस्',
+    'calc.sub': 'गाडी छान्नुहोस्, दिन र दूरी बताउनुहोस्, तुरुन्त अनुमान पाउनुहोस्। अन्तिम मूल्य हाम्रो सर्भरले नेपाली रुपैयाँमा गणना गर्छ।',
+    'calc.point1': 'धेरै दिनको स्वतः छुट', 'calc.point2': 'जहाँ चिह्नित छ त्यहाँ चालक समावेश',
+    'calc.point3': 'टोल, पार्किङ र भ्याट छुट्टै देखाइन्छ', 'calc.days': 'दिन', 'calc.km': 'दूरी (किमि)',
+    'calc.calculating': 'अनुमान गणना गर्दै…', 'calc.request': 'यो मूल्य माग्नुहोस्',
+    'calc.footnote': 'केवल अनुमान। मार्ग र अनुमति जाँचपछि अन्तिम मूल्य निर्धारण गरिन्छ।',
+    'calc.total': 'अनुमानित कुल', 'calc.daily': 'दैनिक भाडा', 'calc.distance': 'दूरी',
+    'calc.driver': 'चालक भत्ता', 'calc.discount': 'बहु-दिन छुट',
+    'calc.excluded': 'समावेश छैन: टोल, पार्किङ, रात बसाइ, अनुमति र भ्याट।',
+    'pricing.kicker': 'एक नजरमा', 'pricing.title': 'हाम्रो फ्लीट तुलना गर्नुहोस्',
+    'pricing.sub': 'सबै दर प्रति गाडी, नेपाली रुपैयाँमा। उल्लेख नभएसम्म इन्धन समावेश छैन।',
+    'pricing.caption': 'गाडी मूल्य तुलना', 'pricing.extraTitle': 'अतिरिक्त शुल्कबारे जानकारी',
+    'pricing.extra': 'टोल, पार्किङ, चालकको रात बसाइ भत्ता, भ्याट र ट्रेकिङ वा निकुञ्ज अनुमति दैनिक/प्रति-किमि दरमा समावेश छैनन्। पुष्टि गर्नुअघि हामी कुल अनुमानित रकम सधैँ बताउँछौँ — कुनै आश्चर्य छैन।',
+    'table.vehicle': 'गाडी', 'table.seats': 'सिट', 'table.day': 'प्रति दिन', 'table.km': 'प्रति किमि',
+    'table.driver': 'चालक समावेश', 'table.fuel': 'इन्धन समावेश',
+    'routes.kicker': 'लोकप्रिय मार्ग र प्याकेज', 'routes.title': 'अतिथिहरू कहाँ जान्छन्',
+    'routes.sub': 'केही मनपर्ने यात्राहरू। हरेक यात्रा अनुकूलित गर्न सकिन्छ — केवल हामीलाई बताउनुहोस्।',
+    'route.distance': 'दूरी', 'route.time': 'यात्रा समय', 'route.best': 'उत्तम गाडी',
+    'route.from': 'बाट', 'route.plan': 'यो मार्ग योजना गर्नुहोस्',
+    'how.kicker': 'कसरी काम गर्छ', 'how.title': 'बाटोमा चार सजिलो चरण',
+    'how.step1': 'आफ्नो योजना पठाउनुहोस्', 'how.step1d': 'बुकिङ फारम भर्नुहोस् वा मिति र मार्गसहित WhatsApp मा सन्देश गर्नुहोस्।',
+    'how.step2': 'स्पष्ट मूल्य पाउनुहोस्', 'how.step2d': 'हामी केही घण्टामै गाडी, कुल मूल्य र अनुमति पुष्टि गर्छौँ।',
+    'how.step3': 'पुष्टि गर्नुहोस्', 'how.step3d': 'थोरै अग्रिम रकम तिरेर बुकिङ पक्का गर्नुहोस्। बाँकी हामी सम्हाल्छौँ।',
+    'how.step4': 'हामीसँग यात्रा गर्नुहोस्', 'how.step4d': 'चालक समयमा आउँछन्, स्थानीय जानकारी बाँड्छन् र सुरक्षित पुर्याउँछन्। धन्यवाद!',
+    'why.reviews': '६२०+ अतिथिहरूबाट', 'why.kicker': 'हामीलाई किन रोज्ने',
+    'why.title': 'स्थानीय ज्ञान, उत्कृष्ट सेवा',
+    'why.sub': 'हामी नेपाली टोली हाउँ। कुन बाटो मनसुनमा बन्द हुन्छ, कहाँ रसिलो दालभात पाइन्छ र पहाडमा \"अरु पाँच मिनेट\" भन्नुको अर्थ के हो हामीलाई थाहा छ।',
+    'why.w1': 'स्थानीय, इजाजतप्राप्त चालक', 'why.w1d': 'अंग्रेजी र नेपाली बोल्ने, पहाडी सडकमा प्रशिक्षित।',
+    'why.w2': 'GPS-ट्र्याक गरिएको फ्लीट', 'why.w2d': 'आफ्नो यात्राको लाइभ लिङ्क घरका परिवारलाई पठाउनुहोस्।',
+    'why.w3': 'पूर्ण बीमा गरिएका गाडी', 'why.w3d': 'वैध बीमा, फिटनेस र मार्ग अनुमति।',
+    'why.w4': '२४/७ मानव सहयोग', 'why.w4d': 'जुनसुकै घण्टा, जुनसुकै दिन फोन वा WhatsApp गर्नुहोस्।',
+    'why.w5': 'कुनै लुकेको शुल्क छैन', 'why.w5d': 'जो भन्यौँ, त्यही तिर्नुहुन्छ।',
+    'testi.kicker': 'सुमधुर शब्दहरू', 'testi.title': 'यात्रा गरे, मन पराए, सिफारिस गरे',
+    'testi.sub': 'नेपाल घुमाउँदा हामीसँग भएका अतिथिहरूको वास्तविक अनुभव।',
+    'testi.q1': '"हाम्रो चालक प्रेमले पोखरा राजमार्गमा व्यावसायिक रूपमा गाडी चलाए र उत्तम दृश्यबिन्दुमा रोके। एसयुभी सफा थियो। धन्यवाद!"',
+    'testi.q2': '"लुम्बिनी तीर्थयात्राका लागि हामीले हाइएस बुक गरेका थियौँ। हरेक बिहान समयमा, उचित मूल्य र चालकले मन्दिर शिष्टाचारमा पनि सहयोग गरे।"',
+    'testi.q3': '"माथिल्लो मुस्ताङको लागि ४x४ जिप निकै उपयुक्त थियो। कुनै लुकेको शुल्क थिएन, अनुमति पनि उनैले मिलाए। नेपालको उत्तम यात्रा साझेदार।"',
+    'testi.l1': 'युनाइटेड किङडम · काठमाडौँ–पोखरा', 'testi.l2': 'भारत · लुम्बिनी तीर्थयात्रा',
+    'testi.l3': 'अमेरिका · माथिल्लो मुस्ताङ सफारी',
+    'gallery.kicker': 'यहाँबाटको दृश्य', 'gallery.title': 'नेपाल, नजिकबाट',
+    'gallery.sub': 'हिमालय, सडक र त्यहाँ पुर्याउने गाडीहरू। ठूलो हेर्न कुनै पनि तस्बिरमा ट्याप गर्नुहोस्।',
+    'faq.kicker': 'जान्नैपर्ने कुरा', 'faq.title': 'बारम्बार सोधिने प्रश्नहरू',
+    'faq.sub': 'अझै जिज्ञासा भयो? WhatsApp मा सन्देश गर्नुहोस् — हामी राम्रो यात्रा प्रश्नको स्वागत गर्छौँ।',
+    'faq.ask': 'हामीलाई केही सोध्नुहोस्',
+    'faq.q1': 'कसरी भुक्तानी गर्छु, अग्रिम आवश्यक छ?',
+    'faq.a1': 'ब्याङ्क ट्रान्सफर, इसेवा/खल्ती, कार्ड र नगद स्वीकार गर्छौँ। २०% अग्रिमले बुकिङ पक्का हुन्छ; बाँकी यात्राको सुरु वा अन्त्यमा तिर्न सक्नुहुन्छ।',
+    'faq.q2': 'रद्द गर्ने नीति के छ?',
+    'faq.a2': 'यात्राको ७+ दिन अघि रद्द गरेमा अग्रिम पूर्ण फिर्ता। ४८ घण्टा–७ दिन: ५०% फिर्ता। ४८ घण्टाभित्र अग्रिम फिर्ता हुँदैन, तर सार्न हामी सधैँ प्रयास गर्छौँ।',
+    'faq.q3': 'ट्रेकिङ र निकुञ्ज अनुमति मिलाउनुहुन्छ?',
+    'faq.a3': 'हो। TIMS कार्ड, प्रतिबन्धित क्षेत्र अनुमति (मुस्ताङ जस्तै), चितवन निकुञ्ज प्रवेश र गाडी अनुमति मिलाउँछौँ। अनुमति शुल्क छुट्टै भनिन्छ र कहिल्यै चुपचाप थपिँदैन।',
+    'faq.q4': 'गाडी बीमित र चालक इजाजतप्राप्त छन्?',
+    'faq.a4': 'पक्का। हरेक गाडीमा वैध बीमा, फिटनेस र मार्ग अनुमति छ; हरेक चालकसँग व्यावसायिक इजाजत र कम्तिमा पाँच वर्ष पहाडी सडक अनुभव छ। कागजात मागेमा देखाउँछौँ।',
+    'faq.q5': 'कति सामान लैजान सक्छु?',
+    'faq.a5': 'सेडानमा २ मध्यम झोला, एसयुभीमा ४ ठूला, भ्यानमा १२–१६ र कोचमा ३५+। मोटरसाइकलमा स्याडल ब्याग दिन्छौँ। जिप यात्रामा रुफ र्याक अनुरोधमा उपलब्ध।',
+    'contact.kicker': 'यात्राको बारेमा कुरा गरौँ', 'contact.title': 'बुकिङ अनुरोध पठाउनुहोस्',
+    'contact.sub': ' केही विवरण बाँड्नुहोस्, हामी व्यक्तिगत र नि:शुल्क मूल्यसहित फर्कौँला।',
+    'contact.submit': 'बुकिङ अनुरोध पठाउनुहोस्', 'contact.note': 'अहिले भुक्तानी गर्न पर्दैन। पहिले उपलब्धता पुष्टि गर्छौँ।',
+    'contact.visit': 'नमस्ते भन्न आउनुहोस्', 'contact.address': 'हाम्रो कार्यालय', 'contact.phone': 'फोन गर्नुहोस्',
+    'contact.email': 'इमेल', 'contact.hours': 'समय', 'contact.hoursValue': 'हर दिन, बिहान ६:०० – रात १०:०० नेपाली समय',
+    'contact.whatsapp': 'WhatsApp मा कुरा गर्नुहोस्',
+    'footer.about': 'हिमालय, संस्कृति र आतिथ्य विश्वसँग बाँड्ने नेपाली पारिवारिक यात्रा कम्पनी — एक पटकमा एक आरामदायक यात्रा।',
+    'footer.explore': 'अन्वेषण गर्नुहोस्', 'footer.pricing': 'मूल्य', 'footer.services': 'सेवाहरू',
+    'footer.contact': 'हामीलाई भेट्नुहोस्', 'footer.rights': 'सबै अधिकार सुरक्षित।',
+    'footer.namaste': 'नमस्ते। धन्यवाद। शुभ यात्रा। 🙏',
+  },
+};
+
+let currentLang = localStorage.getItem('nnt-lang') === 'ne' ? 'ne' : 'en';
+
+export const getLanguage = () => currentLang;
+
+/** Translate a key; functions in the dictionary support dynamic strings. */
+export function t(key, ...args) {
+  const value = dictionary[currentLang]?.[key] ?? dictionary.en[key] ?? key;
+  return typeof value === 'function' ? value(...args) : value;
+}
+
+function applyLanguage() {
+  document.documentElement.lang = currentLang;
+  document.querySelectorAll('[data-i18n]').forEach((element) => {
+    const value = t(element.dataset.i18n);
+    if (typeof value === 'string') element.textContent = value;
+  });
+  document.title = currentLang === 'ne'
+    ? 'नमस्ते नेपाल ट्रेभल्स | आरामसँग नेपाल घुमौँ'
+    : `${document.querySelector('[data-dynamic="companyName"]')?.textContent || 'Namaste Nepal Travels'} | Explore Nepal in Comfort`;
+  const langToggle = document.getElementById('langToggle');
+  if (langToggle) {
+    langToggle.textContent = currentLang === 'en' ? 'ने' : 'EN';
+    langToggle.title = currentLang === 'en' ? 'Switch to Nepali' : 'Switch to English';
+  }
+  window.dispatchEvent(new CustomEvent('langchange', { detail: { language: currentLang } }));
+}
+
+export function initI18n() {
+  applyLanguage();
+  document.getElementById('langToggle')?.addEventListener('click', () => {
+    currentLang = currentLang === 'en' ? 'ne' : 'en';
+    localStorage.setItem('nnt-lang', currentLang);
+    applyLanguage();
+  });
+}

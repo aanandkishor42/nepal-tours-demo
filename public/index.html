@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namaste Nepal Travels | Explore Nepal in Comfort</title>
+    <meta
+      name="description"
+      content="Premium vehicles, local drivers and honest prices for tours across Nepal. Sedans, SUVs, 4x4 jeeps, vans, coaches, motorbikes and helicopter charters from Kathmandu."
+    />
+    <meta name="theme-color" content="#0B2545" />
+    <meta property="og:title" content="Explore Nepal in Comfort" />
+    <meta property="og:description" content="Himalayan journeys with warm Nepali hospitality. Transparent NPR pricing, GPS-tracked fleet and 24/7 support." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Serif+Devanagari:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script type="module" src="/js/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Reusable mandala symbol used sparingly as a decorative divider -->
+    <svg class="svg-sprite" aria-hidden="true" focusable="false">
+      <symbol id="icon-mandala" viewBox="0 0 100 100">
+        <g fill="none" stroke="currentColor" stroke-width="1.4">
+          <circle cx="50" cy="50" r="46" />
+          <circle cx="50" cy="50" r="38" />
+          <circle cx="50" cy="50" r="18" />
+          <circle cx="50" cy="50" r="6" />
+          <path d="M50 4c8 10 8 18 0 28-8-10-8-18 0-28ZM50 96c-8-10-8-18 0-28 8 10 8 18 0 28ZM4 50c10-8 18-8 28 0-10 8-18 8-28 0ZM96 50c-10 8-18 8-28 0 10-8 18-8 28 0Z" />
+          <path d="M17 17c12 4 17 10 18 21-11-3-17-9-18-21ZM83 83c-12-4-17-10-18-21 11 3 17 9 18 21ZM83 17c-4 12-10 17-21 18 3-11 9-17 21-18ZM17 83c4-12 10-17 21-18-3 11-9 17-21 18Z" />
+        </g>
+      </symbol>
+    </svg>
+
+    <!-- Prayer flag strip: blue (space), white (air), red (fire), green (water), yellow (earth) -->
+    <div class="prayer-strip" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-header" id="siteHeader">
+      <div class="container header-inner">
+        <a class="brand" href="#home" title="Home">
+          <span class="brand-mark"><svg aria-hidden="true"><use href="#icon-mandala" /></svg></span>
+          <span class="brand-text">
+            <strong data-dynamic="companyName">Namaste Nepal Travels</strong>
+            <small data-i18n="brand.sub">Kathmandu · Nepal</small>
+          </span>
+        </a>
+
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+          <a href="#fleet" data-i18n="nav.fleet">Our Fleet</a>
+          <a href="#calculator" data-i18n="nav.pricing">Price Calculator</a>
+          <a href="#routes" data-i18n="nav.routes">Routes</a>
+          <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+          <a href="#faq" data-i18n="nav.faq">FAQ</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="toggle-group" role="group" aria-label="Display preferences">
+            <button type="button" class="tiny-toggle" id="langToggle" title="Switch language">ने</button>
+            <button type="button" class="tiny-toggle currency-toggle" id="currencyToggle" title="Switch currency">NPR</button>
+          </div>
+          <a class="btn btn-primary btn-sm header-cta" href="#booking" data-i18n="cta.book">Book Your Ride</a>
+          <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ================= HERO ================= -->
+      <section class="hero" id="home" aria-labelledby="heroTitle">
+        <img
+          class="hero-bg"
+          src="/images/hero.jpg"
+          alt=""
+          aria-hidden="true"
+        />
+        <div class="hero-overlay"></div>
+        <svg class="hero-mandala" aria-hidden="true"><use href="#icon-mandala" /></svg>
+
+        <div class="container hero-content">
+          <p class="hero-eyebrow"><span class="dot"></span> <span data-i18n="hero.eyebrow">Namaste &amp; welcome to the Himalayas</span></p>
+          <h1 id="heroTitle">
+            <span data-i18n="hero.title1">Explore Nepal</span><br />
+            <em data-i18n="hero.title2">in Comfort</em>
+          </h1>
+          <p class="hero-sub" data-i18n="hero.sub">
+            From Kathmandu's temple streets to the stillness of Phewa Lake — travel with local
+            drivers who know every bend, in a fleet you can trust.
+          </p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary btn-lg" href="#booking" data-i18n="cta.book">Book Your Ride</a>
+            <a class="btn btn-ghost btn-lg" href="#fleet" data-i18n="cta.fleet">Explore Our Fleet</a>
+          </div>
+          <ul class="hero-trust" aria-label="Our promises">
+            <li>✓ <span data-i18n="hero.trust1">Licensed local drivers</span></li>
+            <li>✓ <span data-i18n="hero.trust2">No hidden charges</span></li>
+            <li>✓ <span data-i18n="hero.trust3">24/7 on-call support</span></li>
+          </ul>
+        </div>
+
+        <a class="scroll-cue" href="#booking">
+          <span></span><small data-i18n="hero.scroll">Scroll to plan your journey</small>
+        </a>
+      </section>
+
+      <!-- ================= QUICK BOOKING BAR ================= -->
+      <section class="quickbook" id="booking" aria-labelledby="quickbookTitle">
+        <div class="container">
+          <div class="quickbook-card">
+            <div class="quickbook-head">
+              <div>
+                <h2 id="quickbookTitle" data-i18n="quick.title">Plan your journey</h2>
+                <p data-i18n="quick.sub">Tell us where you're going. Takes less than a minute.</p>
+              </div>
+              <span class="quickbook-badge"><svg aria-hidden="true"><use href="#icon-mandala" /></svg> <span data-i18n="quick.badge">Dhanyabad · We reply fast</span></span>
+            </div>
+            <form id="quickBookForm" class="quickbook-form">
+              <div class="field">
+                <label for="qbFrom" data-i18n="form.from">From</label>
+                <input id="qbFrom" name="from" type="text" placeholder="Kathmandu" list="nepalCities" />
+              </div>
+              <div class="field">
+                <label for="qbTo" data-i18n="form.to">To</label>
+                <input id="qbTo" name="to" type="text" placeholder="Pokhara" list="nepalCities" />
+              </div>
+              <datalist id="nepalCities">
+                <option value="Kathmandu"></option><option value="Pokhara"></option>
+                <option value="Chitwan"></option><option value="Lumbini"></option>
+                <option value="Nagarkot"></option><option value="Salleri"></option>
+              </datalist>
+              <div class="field">
+                <label for="qbDate" data-i18n="form.date">Travel date</label>
+                <input id="qbDate" name="date" type="date" />
+              </div>
+              <div class="field">
+                <label for="qbPassengers" data-i18n="form.passengers">Passengers</label>
+                <select id="qbPassengers" name="passengers">
+                  <option value="1">1</option><option value="2" selected>2</option>
+                  <option value="3">3</option><option value="4">4</option>
+                  <option value="5">5</option><option value="6">6</option>
+                  <option value="10">10+</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="qbVehicle" data-i18n="form.vehicle">Vehicle type</label>
+                <select id="qbVehicle" name="vehicle"><option value="all" data-i18n="form.any">Any vehicle</option></select>
+              </div>
+              <button class="btn btn-primary btn-block" type="submit" data-i18n="quick.submit">Check Availability</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= STATS STRIP ================= -->
+      <section class="stats container reveal" aria-label="Our experience in numbers">
+        <div class="stat"><strong>12+</strong><span data-i18n="stats.years">Years on Nepali roads</span></div>
+        <div class="stat"><strong>8,400+</strong><span data-i18n="stats.trips">Happy journeys completed</span></div>
+        <div class="stat"><strong>48</strong><span data-i18n="stats.drivers">Local drivers &amp; guides</span></div>
+        <div class="stat"><strong>4.9/5</strong><span data-i18n="stats.rating">Guest rating</span></div>
+      </section>
+
+      <!-- ================= FLEET ================= -->
+      <section class="section" id="fleet" aria-labelledby="fleetTitle">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="kicker" data-i18n="fleet.kicker">Our fleet</span>
+            <h2 id="fleetTitle" data-i18n="fleet.title">The right ride for every road</h2>
+            <p data-i18n="fleet.sub">Honest daily and per-kilometre rates in NPR. Every vehicle is clean, checked and ready for the mountains.</p>
+          </header>
+
+          <div class="filters reveal" id="filtersPanel" role="search" aria-label="Filter vehicles">
+            <button class="filters-toggle" type="button" id="filtersToggle" aria-expanded="false" aria-controls="filterFields">
+              <span><span aria-hidden="true">⚙</span> <span data-i18n="filter.title">Filters</span> <small id="filterCountBadge"></small></span>
+              <span class="chevron" aria-hidden="true">⌄</span>
+            </button>
+            <div class="filter-fields" id="filterFields">
+              <div class="field">
+                <label for="filterType" data-i18n="filter.type">Vehicle type</label>
+                <select id="filterType">
+                  <option value="all" data-i18n="filter.allTypes">All vehicles</option>
+                  <option value="sedan">Sedan</option>
+                  <option value="suv">SUV</option>
+                  <option value="jeep">4x4 Jeep</option>
+                  <option value="van">Van / Tempo</option>
+                  <option value="bus">Coach Bus</option>
+                  <option value="bike">Motorbike</option>
+                  <option value="helicopter">Helicopter</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="filterSeats" data-i18n="filter.seats">Minimum seats</label>
+                <select id="filterSeats">
+                  <option value="0" data-i18n="filter.any">Any</option>
+                  <option value="2">2+</option><option value="4">4+</option>
+                  <option value="6">6+</option><option value="12">12+</option><option value="30">30+</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="filterSort" data-i18n="filter.sort">Sort by</label>
+                <select id="filterSort">
+                  <option value="recommended" data-i18n="filter.recommended">Recommended</option>
+                  <option value="priceLow" data-i18n="filter.priceLow">Price: low to high</option>
+                  <option value="priceHigh" data-i18n="filter.priceHigh">Price: high to low</option>
+                  <option value="seats" data-i18n="filter.mostSeats">Most seats</option>
+                </select>
+              </div>
+              <button class="btn btn-outline filter-reset" type="button" id="filterReset" data-i18n="filter.reset">Reset filters</button>
+            </div>
+          </div>
+
+          <div class="fleet-meta">
+            <p id="fleetCount" role="status" aria-live="polite"></p>
+          </div>
+          <div class="fleet-grid" id="fleetGrid" aria-busy="true">
+            <div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div>
+          </div>
+          <p class="empty-state" id="fleetEmpty" hidden data-i18n="fleet.empty">No vehicles match those filters. Try widening your search.</p>
+        </div>
+      </section>
+
+      <!-- ================= PRICE CALCULATOR ================= -->
+      <section class="calculator-section" id="calculator" aria-labelledby="calcTitle">
+        <svg class="calc-mandala" aria-hidden="true"><use href="#icon-mandala" /></svg>
+        <div class="container calculator-wrap">
+          <div class="calculator-copy reveal">
+            <span class="kicker kicker-light" data-i18n="calc.kicker">Price calculator</span>
+            <h2 id="calcTitle" data-i18n="calc.title">Know your fare before you go</h2>
+            <p data-i18n="calc.sub">Pick a vehicle, tell us your days and distance, and get an instant estimate. The final quote is calculated by our server in NPR.</p>
+            <ul class="calc-points">
+              <li data-i18n="calc.point1">Multi-day discounts applied automatically</li>
+              <li data-i18n="calc.point2">Driver included where marked</li>
+              <li data-i18n="calc.point3">Tolls, parking &amp; VAT shown separately</li>
+            </ul>
+          </div>
+
+          <div class="calculator-card reveal">
+            <form id="calcForm">
+              <div class="field">
+                <label for="calcVehicle" data-i18n="form.vehicle">Vehicle</label>
+                <select id="calcVehicle" name="vehicle" required></select>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="calcDays" data-i18n="calc.days">Days</label>
+                  <input id="calcDays" name="days" type="number" min="1" max="90" value="3" required />
+                </div>
+                <div class="field">
+                  <label for="calcKm" data-i18n="calc.km">Distance (km)</label>
+                  <input id="calcKm" name="km" type="number" min="0" max="10000" value="450" required />
+                </div>
+              </div>
+              <div class="quick-distances" aria-label="Popular distances">
+                <button type="button" data-km="32">Nagarkot 32 km</button>
+                <button type="button" data-km="200">Pokhara 200 km</button>
+                <button type="button" data-km="600">Chitwan 600 km</button>
+              </div>
+            </form>
+
+            <div class="quote-result" id="quoteResult" aria-live="polite">
+              <p class="quote-loading" data-i18n="calc.calculating">Calculating your estimate…</p>
+            </div>
+            <button class="btn btn-primary btn-block" type="button" id="quoteToBooking" data-i18n="calc.request">Request This Quote</button>
+            <p class="calc-footnote" data-i18n="calc.footnote">Estimate only. Final price confirmed after route &amp; permit check.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= COMPARISON TABLE ================= -->
+      <section class="section" id="pricing" aria-labelledby="pricingTitle">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="kicker" data-i18n="pricing.kicker">At a glance</span>
+            <h2 id="pricingTitle" data-i18n="pricing.title">Compare our fleet</h2>
+            <p data-i18n="pricing.sub">All rates are per vehicle, in Nepali Rupees. Fuel is excluded unless stated.</p>
+          </header>
+          <div class="table-wrap reveal">
+            <table class="price-table">
+              <caption class="sr-only" data-i18n="pricing.caption">Vehicle pricing comparison</caption>
+              <thead>
+                <tr>
+                  <th scope="col" data-i18n="table.vehicle">Vehicle</th>
+                  <th scope="col" data-i18n="table.seats">Seats</th>
+                  <th scope="col" data-i18n="table.day">Per Day</th>
+                  <th scope="col" data-i18n="table.km">Per KM</th>
+                  <th scope="col" data-i18n="table.driver">Driver Included</th>
+                  <th scope="col" data-i18n="table.fuel">Fuel Included</th>
+                </tr>
+              </thead>
+              <tbody id="priceTableBody"></tbody>
+            </table>
+          </div>
+          <aside class="extra-charges reveal">
+            <strong data-i18n="pricing.extraTitle">A note on extra charges</strong>
+            <p data-i18n="pricing.extra">Tolls, parking fees, night halt allowance for the driver, VAT and trekking or park permits are not included in the daily/km rates. We'll always tell you the full expected total before you confirm — no surprises, promise.</p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ================= ROUTES ================= -->
+      <section class="section section-tint" id="routes" aria-labelledby="routesTitle">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="kicker" data-i18n="routes.kicker">Popular routes &amp; packages</span>
+            <h2 id="routesTitle" data-i18n="routes.title">Where our guests go</h2>
+            <p data-i18n="routes.sub">A few favourite journeys. Every itinerary can be tailored — just tell us what you have in mind.</p>
+          </header>
+          <div class="routes-grid" id="routesGrid"></div>
+        </div>
+      </section>
+
+      <!-- ================= HOW IT WORKS ================= -->
+      <section class="section" id="how" aria-labelledby="howTitle">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="kicker" data-i18n="how.kicker">How it works</span>
+            <h2 id="howTitle" data-i18n="how.title">Four simple steps to the road</h2>
+          </header>
+          <ol class="steps-grid">
+            <li class="step reveal">
+              <span class="step-num">01</span>
+              <div class="step-icon">📝</div>
+              <h3 data-i18n="how.step1">Send your plan</h3>
+              <p data-i18n="how.step1d">Fill in the booking form or message us on WhatsApp with your dates and route.</p>
+            </li>
+            <li class="step reveal">
+              <span class="step-num">02</span>
+              <div class="step-icon">💬</div>
+              <h3 data-i18n="how.step2">Get a clear quote</h3>
+              <p data-i18n="how.step2d">We confirm the vehicle, total price and any permits within a few hours.</p>
+            </li>
+            <li class="step reveal">
+              <span class="step-num">03</span>
+              <div class="step-icon">🤝</div>
+              <h3 data-i18n="how.step3">Confirm &amp; relax</h3>
+              <p data-i18n="how.step3d">Pay a small advance to lock it in. We handle the rest, right down to the licence checks.</p>
+            </li>
+            <li class="step reveal">
+              <span class="step-num">04</span>
+              <div class="step-icon">🏔️</div>
+              <h3 data-i18n="how.step4">Ride with us</h3>
+              <p data-i18n="how.step4d">Your driver arrives on time, shares local tips and gets you there safely. Dhanyabad!</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ================= WHY CHOOSE US ================= -->
+      <section class="why-section" aria-labelledby="whyTitle">
+        <div class="container why-wrap">
+          <div class="why-visual reveal">
+            <img
+              src="/images/gallery/road.jpg"
+              alt="A mountain road winding through the Nepali Himalayas"
+              loading="lazy"
+            />
+            <div class="why-badge"><strong>4.9</strong><span>★ ★ ★ ★ ★</span><small data-i18n="why.reviews">from 620+ guests</small></div>
+          </div>
+          <div class="why-copy reveal">
+            <span class="kicker" data-i18n="why.kicker">Why choose us</span>
+            <h2 id="whyTitle" data-i18n="why.title">Local knowledge, world-class care</h2>
+            <p data-i18n="why.sub">We're a Nepal-born team. We know which road closes in monsoon, where the best dal bhat is, and why "five more minutes" in the mountains can mean an hour.</p>
+            <ul class="why-list">
+              <li><span class="check">✓</span><div><strong data-i18n="why.w1">Local, licensed drivers</strong><small data-i18n="why.w1d">English &amp; Nepali speaking, trained for mountain roads.</small></div></li>
+              <li><span class="check">✓</span><div><strong data-i18n="why.w2">GPS-tracked fleet</strong><small data-i18n="why.w2d">Share your live trip link with family back home.</small></div></li>
+              <li><span class="check">✓</span><div><strong data-i18n="why.w3">Fully insured vehicles</strong><small data-i18n="why.w3d">Comprehensive cover and verified permits.</small></div></li>
+              <li><span class="check">✓</span><div><strong data-i18n="why.w4">24/7 human support</strong><small data-i18n="why.w4d">Call or WhatsApp us any hour, any day.</small></div></li>
+              <li><span class="check">✓</span><div><strong data-i18n="why.w5">No hidden charges</strong><small data-i18n="why.w5d">The price we quote is the price you pay.</small></div></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TESTIMONIALS ================= -->
+      <section class="section section-tint" aria-labelledby="testiTitle">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="kicker" data-i18n="testi.kicker">Kind words</span>
+            <h2 id="testiTitle" data-i18n="testi.title">Travelled, loved, recommended</h2>
+            <p data-i18n="testi.sub">Real notes from guests we've had the pleasure of driving around Nepal.</p>
+          </header>
+          <div class="testi-grid">
+            <article class="testi-card reveal">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote data-i18n="testi.q1">"Our driver Prem navigated the Pokhara highway like a pro and stopped at the perfect hidden viewpoint. The SUV was spotless. Dhanyabad!"</blockquote>
+              <div class="testi-person"><span class="flag" aria-hidden="true">🇬🇧</span><div><strong>Emily &amp; James</strong><small data-i18n="testi.l1">United Kingdom · Kathmandu–Pokhara</small></div></div>
+            </article>
+            <article class="testi-card reveal">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote data-i18n="testi.q2">"Booked the Hiace for our pilgrimage group to Lumbini. On time every morning, fair price, and the driver helped us with temple etiquette."</blockquote>
+              <div class="testi-person"><span class="flag" aria-hidden="true">🇮🇳</span><div><strong>Ramesh Sharma</strong><small data-i18n="testi.l2">India · Lumbini pilgrimage</small></div></div>
+            </article>
+            <article class="testi-card reveal">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote data-i18n="testi.q3">"The 4x4 into Upper Mustang was exactly what we needed. No hidden charges, and they even arranged permits. Best travel partner in Nepal."</blockquote>
+              <div class="testi-person"><span class="flag" aria-hidden="true">🇺🇸</span><div><strong>Sarah K.</strong><small data-i18n="testi.l3">USA · Upper Mustang safari</small></div></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= GALLERY ================= -->
+      <section class="section" id="gallery" aria-labelledby="galleryTitle">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="kicker" data-i18n="gallery.kicker">The view from here</span>
+            <h2 id="galleryTitle" data-i18n="gallery.title">Nepal, up close</h2>
+            <p data-i18n="gallery.sub">Mountains, roads and the vehicles that take us there. Tap any photo to enlarge.</p>
+          </header>
+          <div class="gallery-grid" id="galleryGrid">
+            <button class="gallery-item tall reveal" type="button" data-caption="Annapurna range at sunrise">
+              <img src="/images/gallery/annapurna.jpg" alt="Snow-capped Annapurna mountain range at sunrise" loading="lazy" />
+            </button>
+            <button class="gallery-item reveal" type="button" data-caption="Phewa Lake, Pokhara">
+              <img src="/images/gallery/phewa.jpg" alt="Boats on Phewa Lake with mountains behind" loading="lazy" />
+            </button>
+            <button class="gallery-item reveal" type="button" data-caption="Our 4x4 jeep in the Mustang valley">
+              <img src="/images/gallery/jeep.jpg" alt="Our 4x4 jeep parked in a Himalayan valley" loading="lazy" />
+            </button>
+            <button class="gallery-item reveal" type="button" data-caption="Prayer flags above Kathmandu">
+              <img src="/images/gallery/flags.jpg" alt="Colourful Tibetan prayer flags fluttering in the mountain wind" loading="lazy" />
+            </button>
+            <button class="gallery-item tall reveal" type="button" data-caption="Temple streets in Kathmandu">
+              <img src="/images/gallery/temple.jpg" alt="Ancient Newari temple architecture in Kathmandu" loading="lazy" />
+            </button>
+            <button class="gallery-item reveal" type="button" data-caption="Hiace van ready for a group transfer">
+              <img src="/images/gallery/van.jpg" alt="Our Hiace van ready for a group airport transfer" loading="lazy" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FAQ ================= -->
+      <section class="section section-tint" id="faq" aria-labelledby="faqTitle">
+        <div class="container faq-wrap">
+          <div class="faq-intro reveal">
+            <span class="kicker" data-i18n="faq.kicker">Good to know</span>
+            <h2 id="faqTitle" data-i18n="faq.title">Frequently asked questions</h2>
+            <p data-i18n="faq.sub">Still curious? Message us on WhatsApp — we love a good travel question.</p>
+            <a class="btn btn-outline" href="#contact" data-i18n="faq.ask">Ask us anything</a>
+          </div>
+          <div class="faq-list reveal">
+            <details open>
+              <summary data-i18n="faq.q1">How do I pay, and is an advance required?</summary>
+              <p data-i18n="faq.a1">We accept bank transfer, mobile wallets (eSewa/Khalti), cards and cash. A 20% advance confirms your booking; the balance is payable at the start or end of the trip, whichever you prefer.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.q2">What is your cancellation policy?</summary>
+              <p data-i18n="faq.a2">Cancel 7+ days before travel for a full refund of the advance. 48 hours–7 days: 50% refund. Within 48 hours the advance is non-refundable, though we'll always try to reschedule your trip instead.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.q3">Do you arrange trekking and park permits?</summary>
+              <p data-i18n="faq.a3">Yes. We can arrange TIMS cards, restricted-area permits (such as Mustang), Chitwan park entry and vehicle permits. Permit costs are quoted separately and never added silently.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.q4">Are your vehicles insured and drivers licensed?</summary>
+              <p data-i18n="faq.a4">Absolutely. Every vehicle has valid insurance, fitness and route permits; every driver holds a professional licence and has at least five years of mountain-road experience. We share documents on request.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.q5">How much luggage can I bring?</summary>
+              <p data-i18n="faq.a5">Sedans take 2 medium bags, SUVs 4 large bags, vans 12–16 bags and coaches 35+. For motorbikes we provide saddle bags. Roof racks are available on request for jeep journeys.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+      <section class="section contact-section" id="contact" aria-labelledby="contactTitle">
+        <div class="container contact-wrap">
+          <div class="contact-form-col reveal">
+            <header class="section-head left">
+              <span class="kicker" data-i18n="contact.kicker">Let's talk travel</span>
+              <h2 id="contactTitle" data-i18n="contact.title">Send us a booking request</h2>
+              <p data-i18n="contact.sub">Share a few details and we'll get back to you with a personal, no-obligation quote.</p>
+            </header>
+            <form id="bookingForm" novalidate>
+              <div class="field-row">
+                <div class="field">
+                  <label for="bkName" data-i18n="form.name">Your name *</label>
+                  <input id="bkName" name="name" type="text" autocomplete="name" required minlength="2" placeholder="Your full name" />
+                </div>
+                <div class="field">
+                  <label for="bkPhone" data-i18n="form.phone">Phone / WhatsApp *</label>
+                  <input id="bkPhone" name="phone" type="tel" autocomplete="tel" required placeholder="+977 98XXXXXXXX" />
+                </div>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="bkEmail" data-i18n="form.email">Email (optional)</label>
+                  <input id="bkEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" />
+                </div>
+                <div class="field">
+                  <label for="bkVehicle" data-i18n="form.vehicle">Vehicle *</label>
+                  <select id="bkVehicle" name="vehicleId" required></select>
+                </div>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="bkDate" data-i18n="form.date">Travel date</label>
+                  <input id="bkDate" name="date" type="date" />
+                </div>
+                <div class="field">
+                  <label for="bkPassengers" data-i18n="form.passengers">Passengers</label>
+                  <input id="bkPassengers" name="passengers" type="number" min="1" max="100" placeholder="2" />
+                </div>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="bkFrom" data-i18n="form.from">From</label>
+                  <input id="bkFrom" name="from" type="text" list="nepalCities" placeholder="Kathmandu" />
+                </div>
+                <div class="field">
+                  <label for="bkTo" data-i18n="form.to">To</label>
+                  <input id="bkTo" name="to" type="text" list="nepalCities" placeholder="Pokhara" />
+                </div>
+              </div>
+              <div class="field">
+                <label for="bkMessage" data-i18n="form.message">Message</label>
+                <textarea id="bkMessage" name="message" rows="4" placeholder="Tell us about your itinerary, luggage, pickup point…"></textarea>
+              </div>
+              <button class="btn btn-primary btn-lg" type="submit" data-i18n="contact.submit">Send Booking Request</button>
+              <p class="form-note" data-i18n="contact.note">No payment needed now. We'll confirm availability first.</p>
+            </form>
+          </div>
+
+          <aside class="contact-info-col reveal">
+            <div class="contact-card">
+              <h3 data-i18n="contact.visit">Come say namaste</h3>
+              <ul class="contact-list">
+                <li><span aria-hidden="true">📍</span><div><strong data-i18n="contact.address">Our office</strong><p data-dynamic="companyAddress">Bhagwan Bahal, Thamel, Kathmandu, Nepal</p></div></li>
+                <li><span aria-hidden="true">📞</span><div><strong data-i18n="contact.phone">Call us</strong><p><a href="tel:+97714700125" data-dynamic="companyPhone">+977 1 4700 125</a></p></div></li>
+                <li><span aria-hidden="true">✉️</span><div><strong data-i18n="contact.email">Email</strong><p><a href="mailto:hello@namastenepaltravels.com" data-dynamic="companyEmail">hello@namastenepaltravels.com</a></p></div></li>
+                <li><span aria-hidden="true">🕐</span><div><strong data-i18n="contact.hours">Hours</strong><p data-i18n="contact.hoursValue">Every day, 6:00 AM – 10:00 PM NPT</p></div></li>
+              </ul>
+              <a class="whatsapp-inline" href="https://wa.me/9779800000000" target="_blank" rel="noopener noreferrer" data-whatsapp-link>
+                <span aria-hidden="true">💬</span> <span data-i18n="contact.whatsapp">Chat on WhatsApp</span>
+              </a>
+            </div>
+            <div class="map-card">
+              <iframe
+                title="Map showing our office in Kathmandu, Nepal"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=Thamel,Kathmandu,Nepal&output=embed"
+                data-dynamic-map
+              ></iframe>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <div class="footer-brand">
+          <a class="brand brand-light" href="#home">
+            <span class="brand-mark"><svg aria-hidden="true"><use href="#icon-mandala" /></svg></span>
+            <span class="brand-text"><strong data-dynamic="companyName">Namaste Nepal Travels</strong><small data-i18n="brand.sub">Kathmandu · Nepal</small></span>
+          </a>
+          <p data-i18n="footer.about">A family-run Nepali travel company sharing our mountains, culture and hospitality with the world — one comfortable journey at a time.</p>
+          <div class="socials" aria-label="Social media">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">◎</a>
+            <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">♪</a>
+            <a href="https://www.tripadvisor.com" target="_blank" rel="noopener noreferrer" aria-label="Tripadvisor">★</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3 data-i18n="footer.explore">Explore</h3>
+          <a href="#fleet" data-i18n="nav.fleet">Our Fleet</a>
+          <a href="#routes" data-i18n="nav.routes">Popular Routes</a>
+          <a href="#pricing" data-i18n="footer.pricing">Pricing</a>
+          <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+          <a href="#faq" data-i18n="nav.faq">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h3 data-i18n="footer.services">Services</h3>
+          <a href="#fleet">Airport transfers</a>
+          <a href="#routes">Trekking transfers</a>
+          <a href="#fleet">Vehicle rental</a>
+          <a href="#calculator">Group tours</a>
+          <a href="#fleet">Helicopter charters</a>
+        </div>
+        <div class="footer-col">
+          <h3 data-i18n="footer.contact">Find us</h3>
+          <p data-dynamic="companyAddress">Bhagwan Bahal, Thamel, Kathmandu, Nepal</p>
+          <a href="tel:+97714700125" data-dynamic="companyPhone">+977 1 4700 125</a>
+          <a href="mailto:hello@namastenepaltravels.com" data-dynamic="companyEmail">hello@namastenepaltravels.com</a>
+        </div>
+      </div>
+      <div class="prayer-strip footer-flags" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> <span data-dynamic="companyName">Namaste Nepal Travels</span>. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        <p><span data-dynamic="companyLicense">Tourism License No. 12345</span></p>
+        <p class="namaste" data-i18n="footer.namaste">Namaste. Dhanyabad. Safe travels. 🙏</p>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp button -->
+    <a class="floating-whatsapp" href="https://wa.me/9779800000000" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp" data-whatsapp-link>
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.04 3C9.4 3 4 8.4 4 15.04c0 2.13.56 4.2 1.62 6.03L3 29l8.1-2.55A12.9 12.9 0 0 0 16.04 27C22.68 27 28 21.6 28 15.04 28 8.4 22.68 3 16.04 3Zm0 21.86c-2.03 0-4.01-.55-5.74-1.58l-.41-.24-4.81 1.51 1.55-4.68-.27-.48A10.7 10.7 0 0 1 5.3 15.04C5.3 9.4 10.05 4.86 16.04 4.86S26.78 9.4 26.78 15.04 21.68 24.86 16.04 24.86Zm5.87-8.02c-.32-.16-1.9-.94-2.2-1.04-.3-.11-.51-.16-.73.16-.21.32-.84 1.04-1.03 1.26-.19.21-.38.24-.7.08-.32-.16-1.36-.5-2.59-1.6-.96-.85-1.6-1.91-1.79-2.23-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.57.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.73-1.75-1-2.4-.26-.63-.53-.54-.73-.55h-.62c-.21 0-.56.08-.85.4-.3.32-1.13 1.1-1.13 2.69s1.16 3.12 1.32 3.33c.16.21 2.28 3.48 5.52 4.88.77.33 1.37.53 1.84.68.77.25 1.48.21 2.03.13.62-.09 1.9-.78 2.17-1.53.27-.75.27-1.4.19-1.53-.08-.13-.3-.21-.62-.37Z"/></svg>
+      <span class="wa-tooltip" data-i18n="contact.whatsapp">Chat on WhatsApp</span>
+    </a>
+
+    <!-- Mobile-only quick action bar (app-like, always reachable with your thumb) -->
+    <nav class="mobile-action-bar" aria-label="Quick actions">
+      <a href="#home"><span aria-hidden="true">⌂</span><small data-i18n="mobile.home">Home</small></a>
+      <a href="tel:+97714700125" data-mobile-call><span aria-hidden="true">📞</span><small data-i18n="mobile.call">Call</small></a>
+      <a class="mobile-book" href="#booking"><span aria-hidden="true">🚗</span><small data-i18n="cta.book">Book Your Ride</small></a>
+      <a href="https://wa.me/9779800000000" target="_blank" rel="noopener noreferrer" data-whatsapp-link><span aria-hidden="true">💬</span><small data-i18n="mobile.whatsapp">WhatsApp</small></a>
+    </nav>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+      <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close photo viewer">✕</button>
+      <img id="lightboxImg" src="" alt="" />
+      <p id="lightboxCaption"></p>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+# Render Blueprint — deploy this folder as a new Web Service.
+# Dashboard secrets marked `sync: false` are asked for once during setup.
+services:
+  - type: web
+    name: namaste-nepal-travels
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+      # Required: the app refuses to boot in production with example values.
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: SESSION_SECRET
+        sync: false
+
+      # Client demo: admin panel moves to a private path and is not linked anywhere.
+      - key: DEMO_MODE
+        value: 'true'
+      - key: ADMIN_PATH
+        sync: false
+
+      # Branding shown to the client (edit these in the dashboard any time).
+      - key: COMPANY_NAME
+        value: Namaste Nepal Travels
+      - key: COMPANY_TAGLINE
+        value: Your Himalayan Journey, Our Local Expertise
+      - key: COMPANY_CITY
+        value: Kathmandu
+      - key: COMPANY_ADDRESS
+        value: Bhagwan Bahal, Thamel, Kathmandu, Nepal
+      - key: COMPANY_PHONE
+        value: '+977 1 4700 125'
+      - key: COMPANY_WHATSAPP
+        value: '9779800000000'
+      - key: COMPANY_EMAIL
+        value: hello@namastenepaltravels.com
+      - key: COMPANY_LICENSE
+        value: Tourism License No. 12345 / Company Reg. No. 67890
+      - key: GOOGLE_MAPS_EMBED
+        value: https://www.google.com/maps?q=Thamel,Kathmandu,Nepal&output=embed
+      - key: USD_RATE
+        value: '133'

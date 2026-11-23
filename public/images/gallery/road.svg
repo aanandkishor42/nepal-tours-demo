@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Placeholder illustration for The Mountain Road">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b2545"/><stop offset="55%" stop-color="#17466e"/><stop offset="100%" stop-color="#f2a93b" stop-opacity=".55"/>
+    </linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#14375c"/><stop offset="100%" stop-color="#081d35"/></linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <circle cx="920" cy="205" r="76" fill="#ffe1a8" opacity=".72"/>
+  
+  <g opacity=".55"><circle cx="220" cy="180" r="120" fill="none" stroke="#fff" stroke-width="2"/><circle cx="220" cy="180" r="88" fill="none" stroke="#fff" stroke-width="1"/><circle cx="220" cy="180" r="42" fill="none" stroke="#fff" stroke-width="1"/></g>
+  <polygon points="-40,620 250,255 520,620" fill="#2c5781" opacity=".85"/>
+  <polygon points="250,255 330,360 210,355" fill="#f4f8fd"/>
+  <polygon points="360,640 700,210 1030,640" fill="#214b74"/>
+  <polygon points="700,210 790,330 665,320 745,290" fill="#fff"/>
+  <polygon points="820,630 1060,350 1260,630" fill="#2c5781" opacity=".8"/>
+  <polygon points="1060,350 1110,420 1015,415" fill="#fff" opacity=".9"/>
+  <path d="M0 655Q300 600 600 655T1200 640V800H0Z" fill="url(#hill)"/>
+  
+  <g font-family="Georgia, serif" fill="#fff">
+    <text x="60" y="705" font-size="46" font-weight="700">The Mountain Road</text>
+    <text x="62" y="750" font-size="22" font-family="Arial, sans-serif" fill="#ffd693" letter-spacing="2">EVERY TURN HAS A STORY</text>
+  </g>
+  <text x="1140" y="755" text-anchor="end" font-size="18" font-family="Arial, sans-serif" fill="#fff" opacity=".45">PLACEHOLDER</text>
+</svg>

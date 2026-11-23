@@ -1,0 +1,110 @@
+[
+  {
+    "id": "kathmandu-pokhara",
+    "name": "Kathmandu → Pokhara",
+    "nameNp": "काठमाडौँ → पोखरा",
+    "type": "Scenic highway",
+    "image": "/images/routes/kathmandu-pokhara.jpg",
+    "remoteImage": "",
+    "bestVehicleId": "suv",
+    "distanceKm": 200,
+    "duration": "6–7 hours",
+    "priceFrom": 14500,
+    "description": "The classic Himalayan highway with river valleys, roadside teahouses and your first jaw-dropping glimpse of the Annapurnas.",
+    "highlights": [
+      "Trishuli River valley",
+      "Ganesh Himal views",
+      "Phewa Lakeside drop-off"
+    ]
+  },
+  {
+    "id": "chitwan-safari",
+    "name": "Chitwan Wildlife Safari",
+    "nameNp": "चितवन वन्यजन्तु सफारी",
+    "type": "Wildlife",
+    "image": "/images/routes/chitwan.jpg",
+    "remoteImage": "",
+    "bestVehicleId": "tempo",
+    "distanceKm": 175,
+    "duration": "5–6 hours",
+    "priceFrom": 22000,
+    "description": "Comfortable group transfer to Chitwan National Park for jeep safaris, canoe rides and Tharu cultural evenings.",
+    "highlights": [
+      "One-horn rhino sightings",
+      "Rapti river canoe",
+      "Tharu village visit"
+    ]
+  },
+  {
+    "id": "lumbini-pilgrimage",
+    "name": "Lumbini Pilgrimage",
+    "nameNp": "लुम्बिनी तीर्थयात्रा",
+    "type": "Pilgrimage",
+    "image": "/images/routes/lumbini.jpg",
+    "remoteImage": "",
+    "bestVehicleId": "hiace",
+    "distanceKm": 270,
+    "duration": "7–8 hours",
+    "priceFrom": 18000,
+    "description": "A peaceful journey to the birthplace of Lord Buddha, ideal for pilgrimage groups travelling together.",
+    "highlights": [
+      "Maya Devi Temple",
+      "Ashokan pillar",
+      "Monastery zone"
+    ]
+  },
+  {
+    "id": "nagarkot-sunrise",
+    "name": "Nagarkot Sunrise",
+    "nameNp": "नागार्कोट सूर्योदय",
+    "type": "Short escape",
+    "image": "/images/routes/nagarkot.jpg",
+    "remoteImage": "",
+    "bestVehicleId": "sedan",
+    "distanceKm": 32,
+    "duration": "1.5 hours",
+    "priceFrom": 8500,
+    "description": "Leave before dawn and watch the first sunlight paint Everest and the Langtang range gold. Perfect half-day escape from the valley.",
+    "highlights": [
+      "Himalayan panorama",
+      "Sunrise viewpoint",
+      "Newari village breakfast"
+    ]
+  },
+  {
+    "id": "upper-mustang",
+    "name": "Upper Mustang Jeep Safari",
+    "nameNp": "माथिल्लो मुस्ताङ जिप सफारी",
+    "type": "Adventure",
+    "image": "/images/routes/upper-mustang.jpg",
+    "remoteImage": "",
+    "bestVehicleId": "jeep",
+    "distanceKm": 280,
+    "duration": "2 days (from Pokhara)",
+    "priceFrom": 32000,
+    "description": "Cross the rain-shadow kingdom of Lo with a mountain-savvy driver, ancient caves and walled cliffs around Lo Manthang.",
+    "highlights": [
+      "Kali Gandaki gorge",
+      "Lo Manthang walls",
+      "Tiji festival (seasonal)"
+    ]
+  },
+  {
+    "id": "everest-transfers",
+    "name": "Everest Region Transfers",
+    "nameNp": "एभरेष्ट क्षेत्र ट्रान्सफर",
+    "type": "Trekking transfer",
+    "image": "/images/routes/everest.jpg",
+    "remoteImage": "",
+    "bestVehicleId": "jeep",
+    "distanceKm": 145,
+    "duration": "5–6 hours to Salleri",
+    "priceFrom": 16000,
+    "description": "Reliable road transfers to Salleri/Thamdanda plus helicopter charters to Lukla and Everest Base Camp on request.",
+    "highlights": [
+      "Salleri road transfer",
+      "Lukla flight alternatives",
+      "EBC charter options"
+    ]
+  }
+]
