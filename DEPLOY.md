@@ -3,6 +3,10 @@
 This folder is a plain Node/Express app — no build step. The included `render.yaml`
 sets everything up automatically except a few secrets you must provide.
 
+**The GitHub repo is already created and pushed:**
+<https://github.com/aanandkishor42/nepal-tours-demo> (public, default branch `master`).
+So you can **skip step 1 below** and go straight to step 2.
+
 ---
 
 ## 1. Push just this folder to a new GitHub repo
